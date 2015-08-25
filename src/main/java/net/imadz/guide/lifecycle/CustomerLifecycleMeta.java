@@ -21,14 +21,16 @@ public interface CustomerLifecycleMeta {
          * 使用@Initial标识初始状态，使用@Transition来添加转移
          * @Transition中的event表示事件，value表示目标状态。
          */
-        //TODO STEP 2.1 添加初始状态及转移
+        //TODO STEP 2.1 添加初始状态
 
-        //TODO STEP 2.2 添加其他状态及转移
+        //TODO STEP 2.2 添加其他状态
 
         /***
          * 使用@Final标识终结状态
          */
-        //TODO STEP 2.3 添加终结状态及转移
+        //TODO STEP 2.3 添加终结状态
+
+        //TODO STEP 4.在非终结状态上添加转移
     }
 
     //TODO STEP 3.添加@EventSet标识事件集

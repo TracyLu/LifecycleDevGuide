@@ -10,7 +10,7 @@ public class CustomerTest{
     @Test
     public void should_support_standalone_object_without_relation_lifecycle() throws VerificationException {
         Customer customer = new Customer();
-        //TODO STEP 8:当实现了CustomerLifecycleMeta和Customer类之后，取消下列代码的注释，即可运行测试。
+        //TODO STEP 9.当实现了CustomerLifecycleMeta和Customer类之后，取消下列代码的注释，在命令行执行mvn clean test即可运行测试。
 //        customer.activate();
 //        assertEquals(CustomerLifecycleMeta.States.Active.class.getSimpleName(), customer.getState());
 //        customer.suspend();
