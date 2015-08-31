@@ -7,7 +7,8 @@ import net.imadz.lifecycle.annotations.StateSet;
 /**
  * Created by Tracy on 8/25/15.
  */
-//TODO STEP 1.添加@StateMachine标识该接口定义的是状态机
+//STEP 1.添加@StateMachine标识该接口定义的是状态机
+@StateMachine
 public interface CustomerLifecycleMeta {
 
     //TODO STEP 2.添加@StateSet标识状态集
