@@ -24,4 +24,7 @@ public interface CustomerLifecycleMeta {
         static interface Suspended {}
     }
 
+    @EventSet
+    static interface Events {}
+
 }
