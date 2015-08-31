@@ -7,6 +7,7 @@ import net.imadz.lifecycle.annotations.StateSet;
 /**
  * Created by Tracy on 8/25/15.
  */
+@StateMachine
 public interface CustomerLifecycleMeta {
 
 }
