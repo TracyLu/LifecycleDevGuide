@@ -20,7 +20,8 @@ public interface CustomerLifecycleMeta {
 
         @Transitions({@Transition(event = Events.Suspend.class, value = Suspended.class), @Transition(event = Events.Cancel.class, value = Cancelled.class)})
         static interface Active {}
-        
+
+        @Transition(event = Events.Resume.class, value = Active.class)
         static interface Suspended {}
     }
 
