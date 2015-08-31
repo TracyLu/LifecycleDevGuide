@@ -3,6 +3,7 @@ package net.imadz.guide.lifecycle;
 import net.imadz.lifecycle.annotations.EventSet;
 import net.imadz.lifecycle.annotations.StateMachine;
 import net.imadz.lifecycle.annotations.StateSet;
+import net.imadz.lifecycle.annotations.state.Final;
 import net.imadz.lifecycle.annotations.state.Initial;
 
 /**
@@ -14,6 +15,9 @@ public interface CustomerLifecycleMeta {
     static interface States {
         @Initial
         static interface Draft {}
+
+        @Final
+        static interface Cancelled {}
     }
 
 }
