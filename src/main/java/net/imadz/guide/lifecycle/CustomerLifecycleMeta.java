@@ -9,5 +9,9 @@ import net.imadz.lifecycle.annotations.StateSet;
  */
 @StateMachine
 public interface CustomerLifecycleMeta {
+    @StateSet
+    static interface States {
+
+    }
 
 }
