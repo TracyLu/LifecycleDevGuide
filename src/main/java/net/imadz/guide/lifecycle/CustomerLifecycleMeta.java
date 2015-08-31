@@ -18,6 +18,10 @@ public interface CustomerLifecycleMeta {
 
         @Final
         static interface Cancelled {}
+
+        static interface Active {}
+
+        static interface Suspended {}
     }
 
 }
