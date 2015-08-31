@@ -25,6 +25,14 @@ public interface CustomerLifecycleMeta {
     }
 
     @EventSet
-    static interface Events {}
+    static interface Events {
+        static interface Activate {}
+
+        static interface Suspend {}
+
+        static interface Resume {}
+        
+        static interface Cancel {}
+    }
 
 }
