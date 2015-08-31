@@ -1,8 +1,6 @@
 package net.imadz.guide.lifecycle;
 
-import net.imadz.lifecycle.annotations.EventSet;
-import net.imadz.lifecycle.annotations.StateMachine;
-import net.imadz.lifecycle.annotations.StateSet;
+import net.imadz.lifecycle.annotations.*;
 import net.imadz.lifecycle.annotations.state.Final;
 import net.imadz.lifecycle.annotations.state.Initial;
 
@@ -14,11 +12,12 @@ public interface CustomerLifecycleMeta {
     @StateSet
     static interface States {
         @Initial
+        @Transition(event = Events.Activate.class, value = Active.class)
         static interface Draft {}
 
         @Final
         static interface Cancelled {}
-
+        
         static interface Active {}
 
         static interface Suspended {}
