@@ -1,6 +1,7 @@
 package net.imadz.guide.impl;
 
 import net.imadz.guide.lifecycle.CustomerLifecycleMeta;
+import net.imadz.lifecycle.annotations.Event;
 import net.imadz.lifecycle.annotations.LifecycleMeta;
 import net.imadz.lifecycle.annotations.StateIndicator;
 
@@ -19,4 +20,16 @@ public class Customer {
     public Customer() {
         state = CustomerLifecycleMeta.States.Draft.class.getSimpleName();
     }
+
+    @Event
+    public void activate(){}
+
+    @Event
+    public void suspend(){}
+
+    @Event
+    public void resume(){}
+
+    @Event
+    public void cancel(){}
 }
