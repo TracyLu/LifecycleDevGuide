@@ -15,4 +15,8 @@ public class Customer {
     public String getState() {
         return state;
     }
+
+    public Customer() {
+        state = CustomerLifecycleMeta.States.Draft.class.getSimpleName();
+    }
 }
