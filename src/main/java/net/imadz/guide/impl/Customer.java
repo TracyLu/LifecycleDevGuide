@@ -9,6 +9,9 @@ import net.imadz.lifecycle.annotations.StateIndicator;
  */
 @LifecycleMeta(value = CustomerLifecycleMeta.class)
 public class Customer {
+    public Customer() {
+        state = CustomerLifecycleMeta.States.Draft.class.getSimpleName();
+    }
     @StateIndicator
     private String state = null;
 }
